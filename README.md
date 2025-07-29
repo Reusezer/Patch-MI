@@ -109,17 +109,6 @@ python prefix_patch_cli.py --auto_pair_align
                └────────────┘
 ```
 
----
 
-## 6 . Citation
-
-```
-@misc{patchpairs2025,
-  title  = {PATCH-Pairs: Paired-Activation Tensor-Contrast for Harmonisation},
-  author = {Your Name},
-  year   = {2025},
-  url    = {https://github.com/yourname/patch-pairs}
-}
-```
 
 > **PATCH-Pairs**: because sometimes the quickest way to expose a bias neuron is to *patch it out and see what falls apart*.
