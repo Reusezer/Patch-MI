@@ -1,0 +1,121 @@
+── A: Bias-patch scan results ──────────────────
+• processed prompts: 1000
+★ Top layers (star counts):
+ layer  count
+    12    141
+     7    121
+    24     69
+    11     69
+     9     62
+★ Top neurons (hit counts):
+ layer  neuron_idx  count
+    12        4055    141
+    12        1298    101
+    12         291    107
+    12        1189    110
+    12        3266    130
+
+── B: Alignment scan was skipped or no results.
+
+── C1: No intersection.csv (zero overlap)
+
+── C2: Pair‐gap analysis ───────────────────────
+
+● pairgap_age.csv: mean ΔKL = -0.0002
+pair_id
+466_en     0.846191
+811_nl     0.585449
+2386_es    0.336243
+2364_es    0.325684
+611_es     0.141418
+
+=== Text-based Visualization ===
+
+📊 Layer Activity Distribution:
+L12  [141]  ████████████████████████████████████████
+L7   [121]  ██████████████████████████████████▍
+L24  [ 69]  ███████████████████▋
+L11  [ 69]  ███████████████████▋
+L9   [ 62]  █████████████████▋
+L10  [ 50]  ██████████████▏
+L8   [ 40]  ███████████▍
+L3   [ 38]  ██████████▊
+L30  [ 35]  █████████▉
+L6   [ 33]  █████████▍
+L17  [ 31]  ████████▊
+L5   [ 29]  ████████▎
+L25  [ 27]  ███████▋
+L26  [ 26]  ███████▍
+L16  [ 26]  ███████▍
+L28  [ 26]  ███████▍
+L2   [ 22]  ██████▎
+L4   [ 22]  ██████▎
+L13  [ 17]  ████▉
+L21  [ 16]  ████▌
+L18  [ 14]  ████
+L1   [ 14]  ████
+L20  [ 12]  ███▍
+L29  [  9]  ██▌
+L23  [  9]  ██▌
+L15  [  8]  ██▎
+L22  [  8]  ██▎
+L31  [  7]  ██
+L19  [  7]  ██
+L14  [  6]  █▊
+L27  [  6]  █▊
+
+🔥 Most Active Neurons:
+Layer 12 Neuron 4055: ████████████████████████████ (141)
+Layer 12 Neuron 3266: ██████████████████████████ (130)
+Layer  7 Neuron 4055: ████████████████████████ (121)
+Layer 12 Neuron 1039: ███████████████████████ (116)
+Layer  7 Neuron 2116: ██████████████████████ (112)
+
+📉 KL Divergence Summary:
+Mean: 0.0310
+Std:  0.0500
+Max:  0.8906
+Min:  -0.0025
+
+🔍 Pair Gap Analysis:
+
+pairgap_age:
+Quartiles: [-0.016 | -0.002 | 0.011]
+Distribution: 
+          
+          
+          
+          
+          
+          
+          
+██████████
+████      
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+📊 Visualizations saved to /content/drive/MyDrive/Research/code_bias-layer/age_bias/visualizations
+
+=== Detailed Analysis Summary ===
+
+1. Visualization Types:
+  • Type A (Bias Suppression): Shows neurons that help reduce bias
+  • Type B (Safety-Aligned): Shows neurons specific to safety/alignment
+  • Type C (Dual-Purpose): Shows neurons that serve both functions
+  • Combined View: Shows overlap and distribution of all types
+
+2. CSV Files Contents:
+  • neuron_stats.csv: Type A neurons - bias suppression data
+  • alignment_neurons.csv: Type B neurons - safety alignment data
+  • intersection.csv: Type C neurons - dual-purpose neurons
+  • prompt_results.csv: Detailed results per prompt
+  • layer_stats.csv: Statistics per layer
