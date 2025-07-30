@@ -89,7 +89,7 @@ python prefix_patch_cli.py --auto_pair_align
 
 | Flag                | Meaning                                             |                                               |
 | ------------------- | --------------------------------------------------- | --------------------------------------------- |
-| \`--layers "all"    | 0,7,15\`                                            | scan cumulative layers (all) or explicit list |
+| \`--layers "all"`    | `0,7,15\`                                            | scan cumulative layers (all) or explicit list |
 | `--top_k 3`         | how many high-impact neurons to keep per star layer |                                               |
 | `--num_prompts 500` | cap dataset size for quick experiments              |                                               |
 | `--pair_gap age`    | compute Δ KL between `age_more` and `age_less` rows |                                               |
